@@ -1,0 +1,17 @@
+package eldoria;
+
+/**
+ * Subclasse Guerreiro com implementação do método usarHabilidade().
+ */
+public class Guerreiro extends Personagem {
+
+    public Guerreiro(String nome, int nivel, int pontosDeVida, double poderBase) {
+        super(nome, "Guerreiro", nivel, pontosDeVida, poderBase);
+    }
+
+    @Override
+    public void usarHabilidade() {
+        System.out.println("Habilidade: " + getNome() + " ataca com Espada Flamejante!");
+    }
+}
+
